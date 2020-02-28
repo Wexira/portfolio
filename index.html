@@ -7,24 +7,27 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
 
 	<meta name="description" content="Описание страницы">
-	<meta name="keywords" content="Личная страница (выполненные работы, резюме)">
+	<meta name="keywords" content="Личная страница (с выполненными работами, резюме)">
 	<meta name="google" content="notranslate">
 
 	<title>Portfolio</title>
 </head>
 
 <body>
-	<header>
+	<header class="header fixed" id="header">
 		<div class="container">
 			<div class="header__inner">
-				<div class="header__logo">
-					<img class="avatar__photo" src="image/avatar_photo.png" alt="">
-					<p class="header__name">Lewis <br>
-						Nathaniel</p>
-					<p class="header__text">UI & UX Designer</p>
+				<div class="header__logo" data-scroll="#menu">
+					<img class="avatar__photo" src="images/avatar_photo.png" alt="">
+
+					<p class="header__name">Svetlana <br>
+						Shcherbakova</p>
+					<p class="header__text">Web Designer</p>
+
 
 				</div>
 
@@ -36,9 +39,9 @@
 					<a class="nav__link" href="#" data-scroll="#hire me">Hire me</a>
 				</nav>
 
-				<button class="burger" type="button" id="navToggle">
+				<!-- <button class="burger" type="button" id="navToggle">
 					<span class="burger__item">Menu</span>
-				</button>
+				</button> -->
 			</div>
 		</div>
 	</header>
