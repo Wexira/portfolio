@@ -1,0 +1,48 @@
+// main: ../style.less
+
+.nav {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.nav__link {
+	margin-left: 2rem;
+	position: relative;
+
+	font-size: 0.93rem;
+	font-weight: 700;
+	line-height: 1.33333;
+	text-transform: uppercase;
+	color: @black;
+	text-decoration: none;
+	
+	&::after {
+		content: "";
+		width: 0;
+		height: 2px;
+		background-color: @black;
+
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		z-index: 1;
+
+		transition: width 0.2s linear;
+	}
+
+	&:hover:not(.nav__link--btn) {
+
+		&::after {
+			width: 100%;
+		}
+		/*&:hover:not(.nav__link--btn) = hover (наведение на элемент), not (обозначает, что при наведении на элемент nav__link, у которого нет (.nav__link--btn), подчеркивания не будет */
+	}
+
+	&--btn {
+		padding: 0.66rem 2rem;
+		border: 0.133333rem solid @black;
+		border-radius: 20px;
+}
+
+}
